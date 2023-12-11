@@ -1,7 +1,6 @@
 'use client';
 
 import Header from 'components/header/Header';
-import { use } from 'react';
 const tabs = [
   { name: 'Usage', href: '#', current: true },
   { name: 'Example', href: '#', current: false },
@@ -60,11 +59,21 @@ export default async function Index() {
     <div class="bg-white">
       <Header />;
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <h1 class="py-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        <h1 className="py-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Button
         </h1>
 
         <Tabs />
+        <div className="flex-col px-12 py-16 max-w-xl">
+          <p className="mt-6 text-sm leading-8 text-gray-600">
+            Buttons can be used as an endpoint to an action or as way to
+            navigate to the next action they want to take. There are three
+            different button types, and each can be represented in four
+            different states.
+          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img src="/images/button-variations.jpeg" />
+        </div>
       </div>
     </div>
   );
