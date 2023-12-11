@@ -1,3 +1,4 @@
+'use client';
 import Header from 'components/header/Header';
 import BottomRightHue from 'components/background/bottom-right-hue/BottomRightHue';
 import TopLeftHue from 'components/background/top-left-hue/TopLeftHue';

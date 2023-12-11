@@ -1,4 +1,7 @@
+'use client';
+
 import Header from 'components/header/Header';
+import { use } from 'react';
 const tabs = [
   { name: 'Usage', href: '#', current: true },
   { name: 'Example', href: '#', current: false },
