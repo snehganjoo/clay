@@ -4,7 +4,7 @@ export function Footer(props) {
       {/* eslint-disable-next-line @next/next/no-img-element*/}
       <img
         class="aspect-auto flex justify-center px-6 py-6"
-        src="IMAGES/footer.png"
+        src="images/footer.png"
         alt="Primary Footer"
       />
       <div class="px-4 py-6">
