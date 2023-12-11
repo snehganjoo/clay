@@ -24,7 +24,7 @@ export function Header(props) {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Clay</span>
-            <img className="h-8 w-auto" src="/images/clay.png" alt="" />
+            <img className="h-8 w-auto" src="/images/logo.png" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -60,7 +60,7 @@ export function Header(props) {
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Clay</span>
-              <img className="h-8 w-auto" src="/images/clay.png" alt="" />
+              <img className="h-8 w-auto" src="/images/logo.png" alt="" />
             </a>
             <button
               type="button"
