@@ -4,6 +4,8 @@ import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import SideNavigation from 'components/ds/side-navigation/SideNavigation';
+import HueTopLeft from 'components/ds/background/hue-top-left/HueTopLeft';
+import HueBottomRight from 'components/ds/background/hue-bottom-right/HueBottomRight';
 
 export default function DocsLayout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -85,7 +87,11 @@ export default function DocsLayout({ children }) {
       </div>
 
       <main className="py-20 lg:pl-72">
-        <div className="px-4 sm:px-6 lg:px-8">{children}</div>
+        <div className="px-4 sm:px-6 lg:px-8">
+          <HueTopLeft />
+          {children}
+          <HueBottomRight />
+        </div>
       </main>
     </div>
   );

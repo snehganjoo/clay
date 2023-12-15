@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 export function Callout(props) {
   return (
-    <div
-      href="Button.html"
-      className="max-w-sm rounded flex-wrap py-8 px- 6 overflow-hidden shadow-lg"
+    <Link
+      href={'/docs/components/callout'}
+      className="max-w-sm rounded flex-wrap py-8 px- 6 overflow-hidden shadow-lg bg-white"
     >
       {/* eslint-disable-next-line @next/next/no-img-element*/}
       <img
@@ -11,10 +13,10 @@ export function Callout(props) {
         alt="Primary Callout"
       />
       <div className="px-4 py-6">
-        <div className="font-bold text-xl mb-2">Callouts</div>
+        <div className="font-bold text-xl mb-2">Callout</div>
         <p className="text-gray-700 text-base">
-          Callouts are used to convey important messages to the user. They come
-          in 4 variants
+          Callout is used to convey important messages to the user. They come in
+          4 variants
         </p>
       </div>
       <div className="px-6 pt-4 pb-2">
@@ -31,7 +33,7 @@ export function Callout(props) {
           Success
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
 export default Callout;

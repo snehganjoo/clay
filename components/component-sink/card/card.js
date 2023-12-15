@@ -1,11 +1,15 @@
+import Link from 'next/link';
+
 export function Card(props) {
   return (
-    // <a href="Button.html">
-    <div className="max-w-sm rounded flex-wrap py- 8 px- 6 overflow-hidden shadow-lg">
+    <Link
+      href={'/docs/components/card'}
+      className="max-w-sm rounded flex-wrap py- 8 px- 6 overflow-hidden shadow-lg bg-white"
+    >
       {/* eslint-disable-next-line @next/next/no-img-element*/}
       <img
         className="aspect-auto flex justify-center px-6 py-6"
-        src="images/card.png"
+        src="/images/card.png"
         alt="Primary Card"
       />
       <div className="px-4 py-6">
@@ -32,8 +36,7 @@ export function Card(props) {
           Custom
         </span>
       </div>
-    </div>
-    // </a>
+    </Link>
   );
 }
 export default Card;

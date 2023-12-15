@@ -44,136 +44,43 @@ const tabItemTheme = {
   tabpanel: 'py-3',
 };
 
-const cardVariantContent = [
+const dropdownMenuVariantContent = [
   {
-    heading: 'Default',
+    heading: 'Dropdown Menu Labels',
     rows: [
       {
         cells: [
           {
-            description: 'Card Default / Large',
-            'img-source': '/images/card/card-default-large.png',
+            description: 'Label',
+            'img-source': '/images/dropdown-menu/dropdown-menu-label.png',
           },
           {
-            description: 'Card Default / Large / Hover',
-            'img-source': '/images/card/card-default-large.png',
+            description: 'Label Active',
+            'img-source': '/images/dropdown-menu/dropdown-menu-label.png',
           },
           {
-            description: 'Card Default / Medium',
-            'img-source': '/images/card/card-default-large.png',
+            description: 'Label Hover',
+            'img-source': '/images/dropdown-menu/dropdown-menu-label.png',
           },
-          {
-            description: 'Card Default / Small',
-            'img-source': '/images/card/card-default-large.png',
-          },
-        ],
-      },
-      {
-        cells: [
-          {
-            description: 'Card Default / Small / Hover',
-            'img-source': '/images/card/card-default-large.png',
-          },
-          {},
-          {},
           {},
         ],
       },
     ],
   },
   {
-    heading: 'Button',
+    heading: 'Dropdown Menus',
     rows: [
       {
         cells: [
           {
-            description: 'Card Button / Large',
-            'img-source': '/images/card/card-button-large.png',
+            description: 'Menu Large',
+            'img-source': '/images/dropdown-menu/dropdown-menu-large.png',
           },
 
           {
-            description: 'Card Button / Medium',
-            'img-source': '/images/card/card-button-medium.png',
+            description: 'Menu Simple',
+            'img-source': '/images/dropdown-menu/dropdown-menu-large.png',
           },
-          {
-            description: 'Card Button / Small',
-            'img-source': '/images/card/card-button-small.png',
-          },
-          {
-            description: 'Card Button Two / Large',
-            'img-source': '/images/card/card-button-two-large.png',
-          },
-        ],
-      },
-      {
-        cells: [
-          {
-            description: 'Card Button Two / Medium',
-            'img-source': '/images/card/card-button-two-medium.png',
-          },
-          {
-            description: 'Card Button Two / Small',
-            'img-source': '/images/card/card-button-two-small.png',
-          },
-          {},
-          {},
-        ],
-      },
-    ],
-  },
-  {
-    heading: 'Custom',
-    rows: [
-      {
-        cells: [
-          {
-            description: 'Card Custom / Large',
-            'img-source': '/images/card/card-custom-large.png',
-          },
-
-          {
-            description: 'Card Custom / Medium',
-            'img-source': '/images/card/card-custom-large.png',
-          },
-          {
-            description: 'Card Custom / Small',
-            'img-source': '/images/card/card-custom-large.png',
-          },
-          {},
-        ],
-      },
-    ],
-  },
-  {
-    heading: 'Tag',
-    rows: [
-      {
-        cells: [
-          {
-            description: 'Card Tag / Large',
-            'img-source': '/images/card/card-tag-large.png',
-          },
-          {
-            description: 'Card Tag / Large / Hover',
-            'img-source': '/images/card/card-tag-large.png',
-          },
-          {
-            description: 'Card Tag / Medium',
-            'img-source': '/images/card/card-tag-large.png',
-          },
-          {
-            description: 'Card Tag / Small',
-            'img-source': '/images/card/card-tag-large.png',
-          },
-        ],
-      },
-      {
-        cells: [
-          {
-            description: 'Card Tag / Small / Hover',
-            'img-source': '/images/card/card-tag-large.png',
-          },
-          {},
           {},
           {},
         ],
@@ -182,7 +89,7 @@ const cardVariantContent = [
   },
 ];
 
-function CardVariantSectionContentCard({
+function DropdownMenuVariantSectionContentDropdownMenu({
   children,
   className,
   content,
@@ -228,11 +135,11 @@ function CardVariantSectionContentCard({
   );
 }
 
-function CardVariantSection({ children, className, ...props }) {
+function DropdownMenuVariantSection({ children, className, ...props }) {
   return (
     <>
-      {cardVariantContent.map((content) => (
-        <CardVariantSectionContentCard
+      {dropdownMenuVariantContent.map((content) => (
+        <DropdownMenuVariantSectionContentDropdownMenu
           key={content.heading}
           content={content}
         />
@@ -240,29 +147,29 @@ function CardVariantSection({ children, className, ...props }) {
     </>
   );
 }
-function CardUsageSection({ children, className, ...props }) {}
-function CardExampleSection({ children, className, ...props }) {}
+function DropdownMenuUsageSection({ children, className, ...props }) {}
+function DropdownMenuExampleSection({ children, className, ...props }) {}
 
 export default async function Page() {
   return (
     <div className="">
       <p className="text-sm text-slate-600">COMPONENTS</p>
-      <H2>Card</H2>
+      <H2>Dropdown Menu</H2>
       <SubHeading>
-        Card are used to create miniature stories that introduce users to ideas
-        or actions.
+        Dropdown menu displays lists of information such as links. They are
+        associated with menu labels.
       </SubHeading>
       <div className="py-5" />
       <Flowbite style={tabItemTheme}>
         <Tabs aria-label="Tabs with underline">
           <Tabs.Item active={tabs[0].current} title={tabs[0].title}>
-            <CardVariantSection /*content={props.content}*/ />
+            <DropdownMenuVariantSection /*content={props.content}*/ />
           </Tabs.Item>
           <Tabs.Item active={tabs[1].current} title={tabs[1].title}>
-            <CardUsageSection />
+            <DropdownMenuUsageSection />
           </Tabs.Item>
           <Tabs.Item active={tabs[2].current} title={tabs[2].title}>
-            <CardExampleSection />
+            <DropdownMenuExampleSection />
           </Tabs.Item>
         </Tabs>
       </Flowbite>

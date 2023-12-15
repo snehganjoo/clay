@@ -1,3 +1,5 @@
+'use client';
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }

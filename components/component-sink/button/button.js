@@ -3,8 +3,8 @@ import Link from 'next/link';
 export function Button(props) {
   return (
     <Link
-      href={'/components/button'}
-      className="max-w-sm rounded flex-wrap py-8 px- 6 overflow-hidden shadow-lg"
+      href={'/docs/components/button'}
+      className="max-w-sm rounded flex-wrap py-8 px- 6 overflow-hidden shadow-lg bg-white"
     >
       {/* eslint-disable-next-line @next/next/no-img-element*/}
       <img
@@ -13,9 +13,9 @@ export function Button(props) {
         alt="Primary Button"
       />
       <div className="px-4 py-6">
-        <div className="font-bold text-xl mb-2">Buttons</div>
+        <div className="font-bold text-xl mb-2">Button</div>
         <p className="text-gray-700 text-base">
-          Buttons are use as call to actions and come in 3 variants
+          Button is used for call to actions and come in 3 variants
         </p>
       </div>
       <div className="px-6 pt-4 pb-2">
