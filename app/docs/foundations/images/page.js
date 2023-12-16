@@ -1,5 +1,5 @@
-import Typography from 'components/pages/typography/Typography';
+import Images from 'components/pages/docs/foundations/images/Images';
 
 export default async function Page() {
-  return <Typography />;
+  return <Images />;
 }

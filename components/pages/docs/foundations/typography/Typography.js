@@ -202,7 +202,7 @@ function TypographyAccessibilitySection({ children, className, ...props }) {
 export function Typography({ children, className, ...props }) {
   return (
     <div className="">
-      <p className="text-sm text-slate-600">FOUNDATTIONS</p>
+      <p className="text-sm text-slate-600">FOUNDATIONS</p>
       <H2>Typography</H2>
       <SubHeading>
         Introduce hierarchy and communicate clearly with our single font,

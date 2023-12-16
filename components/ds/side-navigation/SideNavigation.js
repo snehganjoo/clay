@@ -7,12 +7,7 @@ import { useState } from 'react';
 const navigation = [
   {
     name: 'Overview',
-    // icon: HomeIcon,
-    children: [
-      { name: 'Get Started', href: '/docs' },
-      { name: 'Principles', href: '/docs/principles' },
-      { name: 'Release Notes', href: '/docs/release-notes' },
-    ],
+    children: [{ name: 'Principles', href: '/docs/overview/principles' }],
     href: '/docs',
   },
   {
@@ -21,14 +16,13 @@ const navigation = [
     children: [
       { name: 'Typography', href: '/docs/foundations/typography' },
       { name: 'Colors', href: '/docs/foundations/colors' },
-      { name: 'Icons and Images', href: '/docs/foundations/icons-and-images' },
+      { name: 'Images', href: '/docs/foundations/images' },
       { name: 'Spacing', href: '/docs/foundations/spacing' },
     ],
     href: '/docs/foundations',
   },
   {
     name: 'Components',
-    // icon: HomeIcon,
     children: [
       { name: 'Button', href: '/docs/components/button' },
       { name: 'Callout', href: '/docs/components/callout' },
@@ -38,17 +32,6 @@ const navigation = [
       { name: 'Input', href: '/docs/components/input' },
     ],
     href: '/docs/components',
-  },
-  {
-    name: 'Resources',
-    // icon: HomeIcon,
-    // children: [
-    //   { name: 'Download', href: '/' },
-    //   { name: 'Reference', href: '/' },
-    //   { name: 'Help & Support', href: '/' },
-    //   { name: 'Contribution', href: '/' },
-    // ],
-    href: '/docs/principles',
   },
 ];
 

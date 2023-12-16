@@ -6,8 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const navigation = [
-  { name: 'Documentation', href: '/docs' },
-  { name: 'Principles', href: '/docs/principles' },
+  { name: 'Overview', href: '/docs/overview' },
   { name: 'Foundations', href: '/docs/foundations' },
   { name: 'Components', href: '/docs/components' },
 ];

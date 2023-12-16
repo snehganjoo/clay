@@ -1,4 +1,4 @@
-import ComponentSink from 'components/component-sink/ComponentSink';
+import ComponentSink from 'components/pages/docs/components/sink/ComponentSink';
 
 export default async function Index() {
   return <ComponentSink />;

@@ -16,8 +16,8 @@ module.exports = {
       12: '3rem',
       16: '4rem',
     },
+
     borderWidth: { 12: '12px' },
-    // fontFamily: { oppins: '' },
   },
   plugins: [require('@tailwindcss/forms')],
 };
